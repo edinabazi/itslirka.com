@@ -1,0 +1,30 @@
+extends ./_layout/_main_layout
+
+block vars
+
+  - var pageTitle = 'Its Lirka'
+  - var home = true
+
+block content
+
+  .middle
+    .llama
+      include _partials/icons/_llama
+    .email
+      h1
+        a(href="mailto:hello@itslirka.com") hello@itslirka.com
+    ul.titles
+      li Visual Designer
+      li 3D Artist
+  
+  .bottom
+    ul
+      li.icon
+        a(href="https://www.behance.net/lirimh1", target="_blank")
+          include _partials/icons/_behance
+      li.icon
+        a(href="https://www.instagram.com/itslirka/", target="_blank")
+          include _partials/icons/_instagram 
+      li.icon
+        a(href="https://www.artstation.com/lirka", target="_blank")
+          include _partials/icons/_artstation
